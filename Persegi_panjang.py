@@ -1,3 +1,4 @@
+Python
 class PersegiPanjang:
     panjang = 0
     lebar = 0
@@ -7,3 +8,6 @@ class PersegiPanjang:
             raise ValueError("nilai tidak boleh 0")
         self.panjang = panjang
         self.lebar = lebar
+
+    def hitung_keliling(self):
+        return 2 * (self.panjang + self.lebar)
