@@ -7,9 +7,9 @@ class PersegiPanjang:
             raise ValueError("nilai tidak boleh 0")
         self.panjang = panjang
         self.lebar = lebar
-
     def hitung_keliling(self):
         return 2 * (self.panjang + self.lebar)
-
     def hitung_luas(self):
         return self.panjang * self.lebar
+    def __str__(self):
+        return "persegi panjang, panjang " + str(self.panjang) + " cm, dan lebar " + str(self.lebar) + " cm"
